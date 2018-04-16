@@ -25,7 +25,9 @@ Note that you may have to change the MinGW version number to match what you have
             ],
             "browse": {
                 "path": [
-                    "C:/MinGW/lib/gcc/mingw32/6.3.0/include",
+
+
+"C:/MinGW/lib/gcc/mingw32/6.3.0/include",
                     "C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed",
                     "C:/MinGW/include/*"
                 ],
@@ -74,3 +76,5 @@ For C projects, simply remove the C++ lines:
 ```
 
 With these configurations, you should be all set up to use the new IntelliSense engine for linting, memberlist autocomplete, and quick info (tooltips).  Add `"C_Cpp.intelliSenseEngine": "Default"` to your **settings.json** file to try out the new IntelliSense engine.
+
+UPDATE: Starting with 0.16.1, setting the `compilerPath` property to the full path to your MinGW compiler should set all the compiler includes and defines automatically, but the browse.path setting still needs to be set manually.
